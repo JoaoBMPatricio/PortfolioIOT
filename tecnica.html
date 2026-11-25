@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Formação Técnica | Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">&lt;/&gt;</span>Meu Portfólio</a
+        >
+        <div class="menu">
+          <a href="index.html">Início</a><a href="areas.html">Áreas do Saber</a
+          ><a href="tecnica.html">Formação Técnica</a
+          ><a href="curriculo.html">Currículo</a
+          ><a href="contato.html">Contato</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="section">
+        <div class="section-head">
+          <span class="num">03 — INTERNET DAS COISAS</span>
+          <h1>Formação Técnica</h1>
+          <p>
+            Projetos práticos que conectam programação, sensores, dados e
+            soluções para o mundo real.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card project">
+            <h3>Leitor de QR Code com ESP32-CAM</h3>
+            <p>
+              <strong>Objetivo:</strong> registrar informações a partir da
+              leitura de um QR Code.<br /><strong>Tecnologias:</strong>
+              ESP32-CAM, servidor Python e banco de dados.<br /><strong
+                >Funcionamento:</strong
+              > a ESP32-CAM fotografa o QR Code; a imagem é enviada para um
+              servidor em Python, que lê as informações e as armazena no banco
+              de dados.
+            </p>
+            <figure class="project-media" tabindex="0" role="button" aria-label="Ampliar imagem do projeto de QR Code">
+              <img
+                src="assets/projeto-com-qr-code.webp"
+                alt="Registro do projeto de leitura de QR Code com ESP32-CAM"
+              />
+            </figure>
+          </article>
+          <article class="card project">
+            <h3>Quiz matemático com Arduino</h3>
+            <p>
+              <strong>Objetivo:</strong> criar uma atividade interativa de
+              questões matemáticas.<br /><strong>Recursos:</strong> controle de
+              quantidade de acertos, tempo de resposta e progressão de
+              dificuldade.<br /><strong>Aprendizado:</strong> aplicação de
+              lógica de programação, condições, contadores e interação com
+              componentes eletrônicos.
+            </p>
+            <figure class="project-media" tabindex="0" role="button" aria-label="Ampliar imagem do quiz matemático">
+              <img
+                src="assets/Quiz.png"
+                alt="Registro do projeto de quiz matemático com Arduino"
+              />
+            </figure>
+          </article>
+          <article class="card project">
+            <h3>Simulação de rede no Cisco Packet Tracer</h3>
+            <p>
+              <strong>Contexto:</strong> simulação da rede do Campus Nações
+              Unidas do Senac.<br /><strong>Elementos:</strong> roteadores,
+              computadores, rede Wi-Fi e VLANs.<br /><strong>Aprendizado:</strong>
+              planejamento de infraestrutura, segmentação de redes e conexão
+              entre dispositivos em um ambiente simulado.
+            </p>
+            <figure class="project-media" tabindex="0" role="button" aria-label="Ampliar imagem da simulação de rede">
+              <img
+                src="assets/Ciscou.png"
+                alt="Simulação da infraestrutura de rede no Cisco Packet Tracer"
+              />
+            </figure>
+          </article>
+        </div>
+      </section>
+      <section class="split">
+        <div>
+          <h2>Competências praticadas</h2>
+          <p>
+            Programação em Java e JavaScript, lógica, montagem de circuitos,
+            comunicação entre dispositivos, banco de dados, infraestrutura de
+            redes e trabalho em equipe. Também aprendi manutenção básica de
+            computadores, incluindo cuidados com componentes, identificação de
+            peças e procedimentos iniciais de diagnóstico.
+          </p>
+        </div>
+        <div class="note">
+          <strong>Conteúdos estudados:</strong> Java foi utilizado para
+          desenvolver a lógica e os fundamentos da programação orientada a
+          objetos; JavaScript foi estudado para criar páginas e interações na
+          web. Em manutenção, foram abordados componentes, montagem e cuidados
+          básicos com computadores.
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <span>Portfólio de aprendizagem · <span data-year></span></span
+        ><span>Ensino Médio Técnico em IoT</span>
+      </div>
+    </footer>
+    <!-- Modal reutilizável para ampliar as imagens dos projetos técnicos. -->
+    <div class="image-modal" id="image-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+      <button class="image-modal-close" type="button" aria-label="Fechar imagem ampliada">×</button>
+      <img src="" alt="" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
